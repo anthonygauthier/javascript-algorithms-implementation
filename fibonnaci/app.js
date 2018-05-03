@@ -1,3 +1,5 @@
+// Usage : node fibonnaci/app.js fibInteger
+
 const yargs = require('yargs');
 const _     = require('lodash');
 
