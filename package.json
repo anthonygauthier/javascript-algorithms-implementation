@@ -1,10 +1,10 @@
 {
-  "name": "math-problems",
+  "name": "",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.test.js && exit 1"
+    "test": "mocha tests/*.test.js"
   },
   "author": "",
   "license": "ISC",
