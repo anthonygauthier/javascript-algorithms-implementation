@@ -9,18 +9,18 @@ let calc_fibonnaci = (n) => {
     let a = 0,
         b = 0,
         array = [],
-        currentValue = 0;
+        y = 0;
 
     for(let i=1; i < n; i++) {
         if(a == 0) {
             a = 1;
         } else {
             b = a;
-            a = currentValue;
+            a = y;
         }
 
-        currentValue = a + b;
-        array.push(currentValue);
+        y = a + b;
+        array.push(y);
     }
     console.log(`Iterating fibonnaci ${n} times: ${array}`);
 }
@@ -28,16 +28,16 @@ let calc_fibonnaci = (n) => {
 let outputSum_fibonnaci = (n) => {
     let a = 0,
         b = 0,
-        currentValue = 0;
+        y = 0;
     
-    while(currentValue != n) {
+    while(y != n) {
         if(a == 0) {
             a = 1;
         } else {
             b = a;
-            a = currentValue
+            a = y
         }
-        currentValue = a + b;
+        y = a + b;
     }
 
     console.log(`The fibonnaci sum for ${n} = ${b} + ${a}`);
