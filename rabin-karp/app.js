@@ -7,23 +7,21 @@ const argv    = yargs.argv;
 const string  = argv._[0];
 const pattern = argv._[1];
 
-let rabinKarp = () => {
+let rabinKarp = (str, patt) => {
     let array = [],
         indexOf = 0; 
 
     while(indexOf != -1) {
         let offset = (indexOf === 0) ? indexOf : indexOf + 1;
-        indexOf = string.indexOf(pattern, offset)
+        indexOf = str.indexOf(patt, offset)
 
         if(indexOf != -1) 
             array.push(indexOf);
     }
         
-    if(array.length === 0) {
-        console.log(`Pattern '${pattern}' was not found in string '${string}'`);
-    } else {
-        console.log(`Pattern '${pattern}' was found at the following indices: ${array}`);
-    }
+    return array;
 }
 
-rabinKarp(string);
+module.exports = {
+    rabinKarp
+}

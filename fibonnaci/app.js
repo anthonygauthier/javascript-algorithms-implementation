@@ -13,7 +13,7 @@ let calc_fibonnaci = (n) => {
         array = [],
         y = 0;
 
-    for(let i=1; i < n; i++) {
+    for(let i=1; i <= n; i++) {
         if(a == 0) {
             a = 1;
         } else {
@@ -24,7 +24,7 @@ let calc_fibonnaci = (n) => {
         y = a + b;
         array.push(y);
     }
-    console.log(`Iterating fibonnaci ${n} times: ${array}`);
+    return array;
 }
 
 let outputSum_fibonnaci = (n) => {
@@ -41,12 +41,10 @@ let outputSum_fibonnaci = (n) => {
         }
         y = a + b;
     }
-
-    console.log(`The fibonnaci sum for ${n} = ${b} + ${a}`);
+    return [a,b];
 }
 
-console.log('---------------------------------------------------------');
-calc_fibonnaci(number);
-console.log('---------------------------------------------------------');
-outputSum_fibonnaci(number);
-console.log('---------------------------------------------------------');
+module.exports = {
+    calc_fibonnaci,
+    outputSum_fibonnaci
+}
