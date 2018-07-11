@@ -1,12 +1,3 @@
-// Usage : node rabin-karp/app.js 'string' 'pattern'
-
-const yargs = require('yargs');
-const _     = require('lodash');
-
-const argv    = yargs.argv;
-const string  = argv._[0];
-const pattern = argv._[1];
-
 let rabinKarp = (str, patt) => {
     let array = [],
         indexOf = 0; 

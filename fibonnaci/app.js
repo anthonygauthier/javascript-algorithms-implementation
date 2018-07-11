@@ -1,12 +1,3 @@
-// Usage : node fibonnaci/app.js fibInteger
-
-const yargs = require('yargs');
-const _     = require('lodash');
-
-const argv = yargs.argv;
-const number = argv._[0];
-
-
 let calc_fibonnaci = (n) => {
     let a = 0,
         b = 0,
