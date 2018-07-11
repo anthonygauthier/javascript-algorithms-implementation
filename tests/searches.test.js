@@ -1,14 +1,14 @@
 const expect = require('expect');
-const {selectionSearch} = require('../searches/selectionSeach');
+const {binarySearch} = require('../searches/binarySearch');
 
-describe('Tests concerning the selection search algo', () => {
+describe('Tests concerning the binary search algo', () => {
     let x = 3,
         y = 999;
     it(`number ${x} should be in array`, () => {
-        expect(selectionSearch(x)).toBe(true);
+        expect(binarySearch(x)).toBe(true);
     }); 
 
     it(`number ${y} shouldn\'t be in array`, () => {
-      expect(selectionSearch(y)).toBe(false);
+      expect(binarySearch(y)).toBe(false);
   }); 
 });

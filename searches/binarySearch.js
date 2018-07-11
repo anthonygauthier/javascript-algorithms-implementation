@@ -1,4 +1,4 @@
-let selectionSearch = (x) => {
+let binarySearch = (x) => {
   let array = [3,6,9,12,15,45,52,78,92,120]
     , message = ''
     , midValueIndex = Math.round((array.length - 1) / 2);
@@ -23,5 +23,5 @@ let selectionSearch = (x) => {
 }
 
 module.exports = {
-  selectionSearch
+  binarySearch
 }
